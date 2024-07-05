@@ -18,7 +18,7 @@ function App() {
       {count == 0 ? (
         <div className="main">
           <div className="text">
-            <p>Are piche kaha aa rhi ho aage jao</p>
+            <p>Are piche kaha aa rhi ho aage jao &#129318;</p>
             <button className="rightBtn" onClick={() => setCount(count + 1)}>
               <i className="bx bxs-right-arrow"></i>
             </button>
@@ -45,7 +45,7 @@ function App() {
       ) : (
         <div className="main">
           <div className="text">
-            <p>Ooups ye kon sa page khul gya Sorry</p>
+            <p>Ooups ye kon sa page khul gya Sorry &#128517;</p>
             <button className="leftBtn" onClick={() => setCount(6)}>
               <i className="bx bxs-left-arrow"></i>
             </button>

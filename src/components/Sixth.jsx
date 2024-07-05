@@ -81,7 +81,9 @@ const Sixth = ({ count, setCount }) => {
           <p className="hbdText">
             With all my love and a whole lot of laughter,
           </p>
-          <p className="hbdTextEnd">From one of your friends - <span>Mihir</span></p>
+          <p className="hbdText"><span style={{color: "red"}}>&#10100;</span> upar saara bakwaas chat gpt diya hai isme mera yogdaan bahut km hai <span style={{color: "red"}}>&#10101;</span></p>
+          <p className="hbdTextEnd">From one of your smartest friends &#128526; - <span>Mihir</span></p>
+          <p>Aaj hi hai nn waise &#128580;&#128580;</p>
         </div>
         <div className="hbdLogoDiv">
           <div>

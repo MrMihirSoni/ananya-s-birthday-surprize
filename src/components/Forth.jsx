@@ -12,7 +12,7 @@ const Forth = ({ count, setCount }) => {
       <div className="text">
         <p>Independence day of Argentina .....</p>
         <img src={image} alt="" />
-        <p>Happy Independence Day </p>
+        <p>Happy Independence Day</p>
       </div>
     </div>
   );

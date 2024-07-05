@@ -4,7 +4,7 @@ const Seventh = ({ count, setCount }) => {
   return (
     <div className="main">
       <div className="text">
-        <p>aage kuch nhi hai</p>
+        <p>aage kuch nhi hai...</p>
       </div>
       <button className="leftBtn" onClick={() => setCount(count - 1)}>
         <i className="bx bxs-left-arrow"></i>
