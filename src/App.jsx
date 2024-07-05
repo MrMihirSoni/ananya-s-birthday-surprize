@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./app.css";
 import Fifth from "./components/Fifth";
 import First from "./components/First";
 import Forth from "./components/Forth";
@@ -15,9 +16,13 @@ function App() {
   return (
     <>
       {count == 0 ? (
-        <div>
-          <p>Are piche kaha aa rhi ho aage jao</p>
-          <button onClick={() => setCount(count + 1)}><i className='bx bxs-right-arrow' ></i></button>
+        <div className="main">
+          <div className="text">
+            <p>Are piche kaha aa rhi ho aage jao</p>
+            <button className="rightBtn" onClick={() => setCount(count + 1)}>
+              <i className="bx bxs-right-arrow"></i>
+            </button>
+          </div>
         </div>
       ) : count == 1 ? (
         <First count={count} setCount={setCount} />
@@ -38,7 +43,14 @@ function App() {
       ) : count == 9 ? (
         <Ninth count={count} setCount={setCount} />
       ) : (
-        <div>Ooups ye kon sa page khul gya Sorry</div>
+        <div className="main">
+          <div className="text">
+            <p>Ooups ye kon sa page khul gya Sorry</p>
+            <button className="leftBtn" onClick={() => setCount(6)}>
+              <i className="bx bxs-left-arrow"></i>
+            </button>
+          </div>
+        </div>
       )}
     </>
   );

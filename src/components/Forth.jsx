@@ -1,14 +1,21 @@
-import React from 'react'
-import image from '../assets/Argentina.jpg'
+import React, { useEffect } from "react";
+import image from "../assets/Argentina.jpg";
 
-const Forth = ({count, setCount}) => {
+const Forth = ({ count, setCount }) => {
+  useEffect(() => {
+    setTimeout(() => {
+      setCount(count + 1);
+    }, 5000);
+  });
   return (
-    <div>
-        <div><img src={image} alt="" /><p>Independence day of Argentina .....</p></div>
-        <button onClick={()=>setCount(count-1)} ><i className='bx bxs-left-arrow' ></i></button>
-      <button onClick={()=>setCount(count+1)} ><i className='bx bxs-right-arrow' ></i></button>
+    <div className="main">
+      <div className="text">
+        <p>Independence day of Argentina .....</p>
+        <img src={image} alt="" />
+        <p>Happy Independence Day </p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Forth
+export default Forth;

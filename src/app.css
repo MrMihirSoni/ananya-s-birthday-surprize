@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: palevioletred;
+}
+.main{
+    max-width: 380px;
+    margin: auto
+}
+p {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 2rem;
+  color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+}
+.text {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.text > img {
+  width: 95%;
+  border-radius: 2rem;
+}
+button {
+  position: fixed;
+  bottom: 1rem;
+}
+.leftBtn {
+  left: 1rem;
+}
+.rightBtn {
+  right: 1rem;
+}
+
+.hbdLogoDiv {
+  display: grid;
+  width: 100%;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+.hbdLogoDiv > div > img {
+  width: 100%;
+  border-radius: 3rem;
+}
+
+.photoDiv{
+    margin: 2rem 1rem;
+}
+.photoDiv>img{
+    width:100%;
+    border-radius: 3rem;
+}
+.hbdTextDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.hbdText{
+    font-size: 1.2rem;
+    color: silver;
+}
+.hbdTextEnd{
+    font-size: 1.2rem;
+}
+.hbdTextEnd>span{
+    color: gold;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes logo-jump {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .face {
+    animation: logo-spin infinite 1.5s;
+  }
+  .logo {
+    animation: logo-jump infinite 0.3s;
+  }
+}
